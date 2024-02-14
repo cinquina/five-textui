@@ -1,0 +1,93 @@
+* {
+  font-family: 'Gilroy';
+  overflow: hidden;
+}
+
+pre {
+  counter-reset: line-numbering;
+  background: #2c3e50;
+  padding: 12px 0px 14px 0;
+  color: #ecf0f1;
+  line-height: 140%;
+}
+
+.nui-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.textui {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.textui:last-child {
+  margin-bottom: 35px;
+}
+
+.textui-keybind-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 41px;
+  background-color: #252934;
+  border-radius: 3px;
+}
+
+.textui-keybind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 25px;
+  color: #43b8a5;
+  font-weight: 600;
+  background-color: rgba(54, 156, 129, 0.381);
+  border: 0.2vh solid #52938b;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #50bcaf40, 0 0 5px #50bcaf40, 0 0 5px #50bcaf40, 0 0 5px #50bcaf40;
+}
+
+.textui-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 41px;
+  background-color: #252934;
+  border-radius: 3px;
+}
+
+.textui-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #43b8a5;
+  border-radius: 40%;
+  box-shadow: 0 0 10px #43b8a5, 0 0 20px #43b8a5;
+}
+
+.textui-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  width: 155px;
+  height: 41px;
+  background-color: #252934;
+  border-radius: 3px;
+}
